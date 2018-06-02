@@ -1,24 +1,42 @@
 header {
   display: flex;
-  height: 80px;
+  height: auto;
   width: 100%;
-  border: 2px solid red;
+  border-bottom: 1px solid black;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: space-between;
 }
 
-.logo,
-.nav {
-  display: inline-flex;
-  justify-content: flex-end;
+a {
+  color: black;
 }
-.nav span {
-  justify-content: flex-end;
 
+.logo {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .logo span {
+  padding-left: 10px;
   color: MediumAquaMarine;
+}
 
+.nav span {
+  padding: 10px;
+
+}
+
+.nav {
+  display: flex;
+  height: auto;
+  padding-right: 30px;
+  flex-basis: 400px;
+  flex-wrap: wrap-reverse;
 }
