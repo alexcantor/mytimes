@@ -108,14 +108,13 @@ h3.newsbites {
   font-size: 30px;
   color: white;
   display: flex;
+  align-items: center;
   text-align: center;
 }
 
 .large #mainstoryimg.img {
   background-image: url(./pics/mainstory.png);
   font-size: 40px;
-  text-align: left;
-
 }
 
 .large #secstoryimg.img {
@@ -172,8 +171,6 @@ h3.newsbites {
   font-family: verdana;
   font-size: 12px;
   color: dimgray;
-
-
 }
 
 .leftbottomstories .subcolumn {
