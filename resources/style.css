@@ -1,9 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+
 header {
   display: flex;
   height: auto;
   width: 100%;
   border-bottom: 1px solid black;
-  font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   align-items: center;
@@ -15,6 +20,29 @@ a {
   color: black;
 }
 
+p {
+  font-family: georgia;
+  font-size: 17px;
+  color: black;
+  margin-top: 16px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Georgia;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+span.newsbites {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 16px;
+}
 .logo {
   display: flex;
   width: 100%;
@@ -39,4 +67,106 @@ a {
   padding-right: 30px;
   flex-basis: 400px;
   flex-wrap: wrap-reverse;
+}
+
+/*###################
+Main Content Section*/
+
+/*.content {
+  border: 4px solid black;
+  width: auto;
+  height: 600px;
+}*/
+
+.column {
+  border: 3px dotted red;
+  display: flex;
+}
+
+.large,
+.medium,
+.small {
+  display: flex;
+  flex-direction: column;
+}
+
+.subcolumn {
+  border: 3px solid deepskyblue;
+  display: flex;
+  flex-direction: colum;
+
+}
+
+.img {
+  background-size: cover;
+  height: 300px;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.large #mainstoryimg.img {
+  background-image: url(./pics/mainstory.png);
+  font-size: 40px;
+}
+
+.large #secstoryimg.img {
+  background-image: url(./pics/fallseason.png);
+}
+
+.large #thirdstoryimg.img {
+  background-image: url(./pics/hipstercamera.png);
+}
+
+.medium #firststory.img {
+
+}
+
+.medium #secstoryimg.img {
+  background-image: url(./pics/catceo.png);
+}
+
+.small #firststoryimg.img{
+  background-image: url(./pics/cookie.png);
+}
+
+.small #secstory.img {
+
+}
+
+.column .large {
+  width: 630px;
+  border: 2px solid red;
+}
+
+.column .medium {
+  border: 2px solid blue;
+  width: 300px;
+  background-color: MediumAquaMarine;
+}
+
+.column .small {
+  width: 240px;
+  border: 2px solid green;
+  background-color: khaki;
+}
+
+.leftbottomstories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+
+.bitesnav {
+  display: block;
+}
+#leftcolsecstory,
+#leftcolthirdstory {
+  width: 300px;
+
 }
